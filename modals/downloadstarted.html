@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/styles/game_details.css" />
+    <link rel="stylesheet" href="/styles/comon.css" />
+
+    <style type="text/tailwindcss">
+      @layer components {
+        .center {
+          @apply flex justify-center items-center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w-screen h-screen fixed z-[999] top-0 left-0 bg-[#00000080] center">
+      <div
+        class="bg-[#0D1621] rounded-[20px] w-[520px] flex justify-start items-center flex-col p-[30px] relative"
+      >
+        <button class="absolute top-[30px] right-[30px]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+          >
+            <path
+              d="M11.6449 2.04935C12.1134 1.58082 12.1134 0.819928 11.6449 0.351398C11.1763 -0.117133 10.4154 -0.117133 9.9469 0.351398L6 4.30205L2.04935 0.355146C1.58082 -0.113384 0.819928 -0.113384 0.351398 0.355146C-0.117133 0.823676 -0.117133 1.58457 0.351398 2.0531L4.30205 6L0.355146 9.95065C-0.113384 10.4192 -0.113384 11.1801 0.355146 11.6486C0.823676 12.1171 1.58457 12.1171 2.0531 11.6486L6 7.69795L9.95065 11.6449C10.4192 12.1134 11.1801 12.1134 11.6486 11.6449C12.1171 11.1763 12.1171 10.4154 11.6486 9.9469L7.69795 6L11.6449 2.04935Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+        <div class="center flex-col gap-[30px]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="70"
+            height="70"
+            viewBox="0 0 70 70"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_88_13219)">
+              <path
+                d="M70 35.0008C70 54.3323 54.3312 70.0005 35.0005 70C15.6688 70.0005 4.38357e-08 54.3323 4.38357e-08 35.0008C-0.000956987 15.6693 15.6688 0 35.0005 0C54.3312 0 70 15.6699 70 35.0008Z"
+                fill="#3BD238"
+              />
+              <path
+                d="M69.9284 37.143C69.906 37.1206 69.8837 37.0979 69.8612 37.0757C69.8195 37.0337 51.499 18.7133 51.4568 18.6713C47.2512 14.4329 41.4282 11.8019 34.9999 11.8019C22.2087 11.8019 11.8018 22.2086 11.8018 35C11.8018 41.4279 14.4326 47.2506 18.6706 51.4563C18.7128 51.4989 18.7551 51.5411 18.7975 51.5832C18.8398 51.6257 37.0343 69.8203 37.077 69.8625C37.0988 69.8845 37.121 69.9067 37.143 69.9284C54.7659 68.8642 68.8637 54.7663 69.9284 37.143Z"
+                fill="#32B537"
+              />
+              <path
+                d="M34.9999 11.8019C22.2087 11.8019 11.8018 22.2088 11.8018 35C11.8018 47.7913 22.2087 58.1982 34.9999 58.1982C47.7912 58.1982 58.1981 47.7913 58.1981 35C58.1981 22.2088 47.7912 11.8019 34.9999 11.8019ZM34.9999 56.265C23.2744 56.265 13.735 46.7256 13.735 35C13.735 23.2745 23.2744 13.7351 34.9999 13.7351C46.7255 13.7351 56.2649 23.2745 56.2649 35C56.2649 46.7256 46.7255 56.265 34.9999 56.265Z"
+                fill="#F4F6F9"
+              />
+              <path
+                d="M44.9489 37.2163L35.9665 46.1988V21.4677C35.9665 20.9334 35.5336 20.5011 34.9999 20.5011C34.4661 20.5011 34.0333 20.9334 34.0333 21.4677V46.1989L25.0509 37.2165C24.6733 36.8389 24.0617 36.8389 23.6841 37.2165C23.3065 37.5941 23.3065 38.2056 23.6841 38.5832L34.3159 49.215C34.4052 49.3045 34.5122 49.3753 34.6308 49.4244C34.7489 49.4732 34.8741 49.4989 35 49.4989C35.1259 49.4989 35.2512 49.4732 35.3693 49.4244C35.4878 49.3753 35.5949 49.3045 35.6842 49.215L46.316 38.5832C46.6936 38.2056 46.6936 37.5941 46.316 37.2165C45.9384 36.8389 45.3267 36.8389 44.9489 37.2163Z"
+                fill="#F4F6F9"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_88_13219">
+                <rect width="70" height="70" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <h3 class="uppercase text-white tanker text-[30px]">
+            Download Started!
+          </h3>
+          <p class="text-[#E6DDDD] text-[16px] gilroy_sm text-center">
+            Your download has started successfully. Enjoy your exclusive
+            marketing materials and resources for our games.
+          </p>
+          <button
+            class="ctaBtn py-[8px] px-[20px] text-white rounded-[10px] text-[16px] mt-[14px] w-full"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

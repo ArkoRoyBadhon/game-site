@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "tanker";
+  src: url("/assets/fonts/Tanker-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "gilroy-semibold";
+  src: url("/assets/fonts/gilroy-semibold.ttf") format("truetype");
+}
+.tanker {
+  font-family: "tanker", sans-serif !important;
+}
+.gilroy_sm {
+  font-family: "gilroy-semibold", sans-serif !important;
+}
+
+.stroke {
+  -webkit-text-stroke: 1px white;
+}
+
+@layer components {
+  .center {
+    @apply flex justify-center items-center;
+  }
+  .layout_wrapper {
+    @apply max-w-[1240px] mx-auto px-[20px] sm:px-[40px] xl:p-0;
+  }
+  .container_wrp {
+    @apply max-w-[1440px] mx-auto;
+  }
+}

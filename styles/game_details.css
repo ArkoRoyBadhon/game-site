@@ -1,0 +1,104 @@
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  .shape {
+    clip-path: polygon(50% 0%,
+        100% 0,
+        100% 100%,
+        76% 96%,
+        0 100%,
+        0 0) !important;
+  }
+
+  .hero-height {
+    height: 445px !important;
+  }
+
+
+}
+
+@media screen and (min-width: 401px) and (max-width: 460px) {
+  .shape {
+    clip-path: polygon(50% 0%,
+        100% 0,
+        100% 100%,
+        77% 95%,
+        0 100%,
+        0 0) !important;
+  }
+
+  .hero-height {
+    height: 512px !important;
+  }
+}
+@media screen and (min-width: 461px) and (max-width: 860px) {
+  .shape {
+    clip-path: polygon(50% 0%,
+        100% 0,
+        100% 100%,
+        77% 95%,
+        0 100%,
+        0 0) !important;
+  }
+
+  .hero-height {
+    height: 485px !important;
+  }
+}
+
+.shape {
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 78% 90%, 0 100%, 0 89%, 0 0);
+}
+
+.hero-height {
+  height: 460px;
+}
+
+.ctaBtn {
+  background: linear-gradient(180deg, #f33f3f -21.43%, #ac1717 146.43%);
+}
+
+.ctaNobg {
+  border: 0.8px solid #f33f3f;
+  background: #ffffff1a;
+  backdrop-filter: blur(5px);
+}
+
+.animate {
+  animation: zoom 10s linear infinite alternate;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+
+
+
+.bg-shape {
+  background: url('/assets/bg-shape-mobile.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: border-box; 
+  overflow: hidden;
+}
+
+
+@media (min-width: 461px) {
+  .bg-shape {
+    background: url('/assets/bg-shape-tablet.png');
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1350px) {
+  .bg-shape {
+    background: url('/assets/bg-shape-desktop.png');
+    background-repeat: no-repeat;
+  }
+}

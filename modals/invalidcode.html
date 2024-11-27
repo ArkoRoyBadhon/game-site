@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/styles/game_details.css" />
+    <link rel="stylesheet" href="/styles/comon.css" />
+
+    <style type="text/tailwindcss">
+      @layer components {
+        .center {
+          @apply flex justify-center items-center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="w-screen h-screen fixed z-[999] top-0 left-0 bg-[#00000080] center"
+    >
+      <div
+        class="bg-[#0D1621] rounded-[20px] w-[520px] flex justify-start items-center flex-col p-[30px] relative"
+      >
+        <button class="absolute top-[30px] right-[30px]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+          >
+            <path
+              d="M11.6449 2.04935C12.1134 1.58082 12.1134 0.819928 11.6449 0.351398C11.1763 -0.117133 10.4154 -0.117133 9.9469 0.351398L6 4.30205L2.04935 0.355146C1.58082 -0.113384 0.819928 -0.113384 0.351398 0.355146C-0.117133 0.823676 -0.117133 1.58457 0.351398 2.0531L4.30205 6L0.355146 9.95065C-0.113384 10.4192 -0.113384 11.1801 0.355146 11.6486C0.823676 12.1171 1.58457 12.1171 2.0531 11.6486L6 7.69795L9.95065 11.6449C10.4192 12.1134 11.1801 12.1134 11.6486 11.6449C12.1171 11.1763 12.1171 10.4154 11.6486 9.9469L7.69795 6L11.6449 2.04935Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+        <div class="center flex-col gap-[30px]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="70"
+            height="70"
+            viewBox="0 0 70 70"
+            fill="none"
+          >
+            <path
+              d="M60.8692 65.4657H9.13935C5.90322 65.4657 2.97621 63.809 1.3122 61.0336C-0.353305 58.2582 -0.438071 54.8972 1.08484 52.0401L27.1918 8.93965C28.8573 6.18204 31.7785 4.5343 35.0042 4.5343C38.23 4.5343 41.151 6.18204 42.818 8.9428L68.8627 51.9317C70.4466 54.8974 70.362 58.2582 68.6964 61.0337C67.0324 63.809 64.1053 65.4657 60.8692 65.4657Z"
+              fill="#F33F3F"
+            />
+            <path
+              d="M60.8693 65.4658C64.1054 65.4658 67.0324 63.809 68.6964 61.0336C70.3619 58.2582 70.4467 54.8973 68.8628 51.9316L42.8181 8.94268C41.1511 6.18191 38.23 4.53418 35.0044 4.53418V65.4656L60.8693 65.4658Z"
+              fill="url(#paint0_linear_88_12689)"
+            />
+            <path
+              d="M35.0044 47.2082C33.7446 47.2082 32.7222 46.1859 32.7222 44.9259V22.104C32.7222 20.8442 33.7444 19.8218 35.0044 19.8218C36.2644 19.8218 37.2867 20.844 37.2867 22.104V44.9259C37.2867 46.1859 36.2644 47.2082 35.0044 47.2082Z"
+              fill="white"
+            />
+            <path
+              d="M35.0044 56.3365C33.7452 56.3365 32.7222 55.3114 32.7222 54.0542C32.7222 52.7971 33.7452 51.772 35.0044 51.772C36.2636 51.772 37.2867 52.7971 37.2867 54.0542C37.2867 55.3114 36.2636 56.3365 35.0044 56.3365Z"
+              fill="white"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_88_12689"
+                x1="52.5022"
+                y1="-8.52259"
+                x2="52.5022"
+                y2="93.7554"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#F33F3F" />
+                <stop offset="1" stop-color="#AC1717" />
+              </linearGradient>
+            </defs>
+          </svg>
+
+          <h3 class="uppercase text-white tanker text-[30px]">Invalid Code</h3>
+          <p class="text-[#E6DDDD] text-[16px] gilroy_sm text-center">
+            The access code you entered is invalid. Please check the code and
+            try again.
+          </p>
+          <button
+            class="ctaBtn py-[8px] px-[20px] text-white rounded-[10px] text-[16px] mt-[14px] w-full"
+          >
+            Try Again
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
